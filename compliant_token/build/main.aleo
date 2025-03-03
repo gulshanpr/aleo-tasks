@@ -1,6 +1,6 @@
 import credits.aleo;
 import token_registry.aleo;
-program compliant_token_deployment5.aleo;
+program compliant_token_gulshan_1.aleo;
 
 record SpendLimit:
     owner as address.private;
@@ -49,7 +49,7 @@ function transfer_private:
     output r10 as token_registry.aleo/Token.record;
     output r13 as token_registry.aleo/Token.record;
     output r14 as token_registry.aleo/Token.record;
-    output r16 as compliant_token_deployment5.aleo/transfer_private.future;
+    output r16 as compliant_token_gulshan_1.aleo/transfer_private.future;
 
 finalize transfer_private:
     input r0 as token_registry.aleo/prehook_private.future;
@@ -62,9 +62,9 @@ finalize transfer_private:
 
 function initialize:
     assert.eq self.caller aleo10047h9c9efxz3d0u69xn7alclvsvt96ysuhts80p7h2eh57kh5zsjwsp8f;
-    call token_registry.aleo/register_token 71619063553950105623552field 71619063553950105623552u128 71619063553950105623552u128 6u8 10_000_000_000_000_000u128 true compliant_token_deployment5.aleo into r0;
+    call token_registry.aleo/register_token 71619063553950105623552field 71619063553950105623552u128 71619063553950105623552u128 6u8 10_000_000_000_000_000u128 true compliant_token_gulshan_1.aleo into r0;
     async initialize r0 into r1;
-    output r1 as compliant_token_deployment5.aleo/initialize.future;
+    output r1 as compliant_token_gulshan_1.aleo/initialize.future;
 
 finalize initialize:
     input r0 as token_registry.aleo/register_token.future;
@@ -75,7 +75,7 @@ function mint_private:
     call token_registry.aleo/mint_private 71619063553950105623552field aleo10047h9c9efxz3d0u69xn7alclvsvt96ysuhts80p7h2eh57kh5zsjwsp8f 1_000_000_000_000_000u128 true 4294967295u32 into r0 r1;
     async mint_private r1 into r2;
     output r0 as token_registry.aleo/Token.record;
-    output r2 as compliant_token_deployment5.aleo/mint_private.future;
+    output r2 as compliant_token_gulshan_1.aleo/mint_private.future;
 
 finalize mint_private:
     input r0 as token_registry.aleo/mint_private.future;

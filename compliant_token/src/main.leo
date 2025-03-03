@@ -2,7 +2,7 @@ import credits.aleo;
 import token_registry.aleo;
 
 // The 'compliant_token' program.
-program compliant_token_deployment5.aleo {
+program compliant_token_gulshan_1.aleo {
   // Constants defining the token parameters.
   const COMPLAINT_TOKEN_ID: field = 71619063553950105623552field; // Unique token identifier
   const ADMIN_ADDRESS: address = aleo10047h9c9efxz3d0u69xn7alclvsvt96ysuhts80p7h2eh57kh5zsjwsp8f; // Admin address with minting and issuing privileges

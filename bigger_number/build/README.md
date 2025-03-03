@@ -1,4 +1,4 @@
-# compliant_token_gulshan_1.aleo
+# check_if_big_num_privately.aleo
 
 ## Build Guide
 

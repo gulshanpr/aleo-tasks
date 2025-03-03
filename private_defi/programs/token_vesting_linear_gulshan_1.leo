@@ -1,7 +1,7 @@
 import token_registry.aleo;
 import credits.aleo;
 
-program token_vesting_linear_gulshan.aleo {
+program token_vesting_linear_gulshan_1.aleo {
 
 	record LockedTokensReceipt {
 		owner: address,

@@ -1,4 +1,4 @@
-# compliant_token_gulshan_1.aleo
+# auction_test_gulshan_2.aleo
 
 ## Build Guide
 

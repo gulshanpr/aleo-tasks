@@ -1,4 +1,4 @@
-program auction_test_1.aleo {
+program auction_test_gulshan_2.aleo {
 
     record Bid {
         owner: address,
@@ -12,7 +12,7 @@ program auction_test_1.aleo {
         assert_eq(self.caller, bidder);
 
         return Bid {
-            owner: aleo1jf252npmem3a9suskv3km8msvhcagg523qv69xle5splnlcy0sxqlalkrf,
+            owner: aleo12dhxfyemtryqkmz29mqvrazsrqhy9jha52wdnjwd55ext2rtgvrqcjkcjh,
             bidder: bidder,
             amount: amount,
             is_winner: false,
@@ -21,7 +21,7 @@ program auction_test_1.aleo {
 
     transition resolve(first: Bid, second: Bid) -> Bid {
 
-        assert_eq(self.caller, aleo1jf252npmem3a9suskv3km8msvhcagg523qv69xle5splnlcy0sxqlalkrf);
+        assert_eq(self.caller, aleo12dhxfyemtryqkmz29mqvrazsrqhy9jha52wdnjwd55ext2rtgvrqcjkcjh);
 
         if (first.amount >= second.amount) {
             return first;
@@ -32,7 +32,7 @@ program auction_test_1.aleo {
 
     transition finish(bid: Bid) -> Bid {
 
-        assert_eq(self.caller, aleo1jf252npmem3a9suskv3km8msvhcagg523qv69xle5splnlcy0sxqlalkrf);
+        assert_eq(self.caller, aleo12dhxfyemtryqkmz29mqvrazsrqhy9jha52wdnjwd55ext2rtgvrqcjkcjh);
 
         return Bid {
             owner: bid.bidder,
